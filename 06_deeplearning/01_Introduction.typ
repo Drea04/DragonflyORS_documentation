@@ -77,7 +77,7 @@ Un jeu de données peut toujours être enrichi après coup. On peut commencer av
 
 //Saut de page
 #pagebreak()
-== Les étapes pour réaliser une segmentation de deep learning ??
+== Entraînement
 // Insert space
 #v(25pt, weak: true)
 === Création d'un jeu d'entraînement 

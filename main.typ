@@ -1,38 +1,54 @@
-#set page("a4")
+#import "@preview/mantys:1.0.0": *
+#import "@preview/treet:0.1.1": *
+
+#set outline.entry(fill: none)
 #set text(
   lang: "fr", 
-  size: 12pt)
-#show outline: set text(fill: blue)
-#show outline.entry.where(
-  level: 1
-): set block(above: 2em)
+  size: 5pt)
 
-#import "@preview/ilm:1.4.1": *
-#show: ilm.with(
-  title: [Documentation Dragonfly ORS],
-  author: "Lucien DAUNAS, Catherine DURIEU, Manuel MAJROUH, Sandra SARA",
-  paper-size: "a4",
-  date-format: datetime(year: 2024, month: 03, day: 19),
-  abstract:[],
-  table-of-contents: outline(depth: 5),
-  figure-index: (enabled: true),
-  table-index: (enabled: true),
-  listing-index: (enabled: true)
+#show: mantys(
+  name: "mantys",
+  version: "1.0.0",
+  authors: (
+    "Lucien DAUNAS", "Catherine DURIEU", "Manuel MAJROUH", "Sandra SARA",
+  ),
+ 
+  license: "",
+  description: "Guide d'utilisation du logiciel Dragonfly ORS",
+  repository: "https://dragonfly.comet.tech/",
+
+  /// Uncomment one of the following lines to load the above
+  /// package information directly from the typst.toml file
+  // ..toml("../typst.toml"),
+  // ..toml("typst.toml"),
+
+  title: "Dragonfly ORS",
+  // subtitle: "Tagline",
+  date: datetime.today(),
+
+
+  // url: "",
+
+  abstract: [
+  Ce document de travail sert de guide pour l'utilisation du logiciel Dragonfly ORS dans l'analyse d'images d'échantillons biologiques. Destiné à la communauté des microscopistes en France, il constitue une ressource d'accompagnement pour débuter avec Dragonfly.
+  ],
+
+  // examples-scope: (
+  //   scope: (:),
+  //   imports: (:)
+  // )
+
+  // theme: themes.modern
 )
-
-#set page(numbering: "1 of 1")
-#show heading: set text(fill: blue)
-#import "@preview/numbly:0.1.0": numbly
-#set heading(
-  numbering: numbly(
-    "Chapitre {1}:",
-    "Partie {2}",
-    "{3}",
-    "{3}.{4}",
-    "{3}.{4}.{5}"
- ),
-)
-
+/// Helper for Tidy-Support
+/// Uncomment, if you are using Tidy for documentation
+// #let show-module(name, scope: (:), outlined: true) = tidy-module(
+//   read(name + ".typ"),
+//   name: name,
+//   show-outline: outlined,
+//   include-examples-scope: true,
+//   extract-headings: 3,
+// )
 #include "01_Introduction/001_Interface.typ"
 #include "01_Introduction/002_chargement_donnees.typ"
 #include "01_Introduction/003_sauvegarde.typ"
@@ -46,11 +62,13 @@
 
 #include "04_segmentation_manuelle/01_base_segmentation.typ"
 #include "04_segmentation_manuelle/02_seuillage.typ"
-#include "04_segmentation_manuelle/segmentation_manuelle.typ"
+#include "04_segmentation_manuelle/03_segmentation_2D.typ"
+#include "04_segmentation_manuelle/04_segmentation_3D.typ"
+#include "04_segmentation_manuelle/05_ROI_Multi_ROI.typ"
+#include "04_segmentation_manuelle/06_operation_morphologique.typ"
 
 #include "05_Quantification/001_quantification.typ"
 
 #include "06_deeplearning/01_Introduction.typ"
 
 #include "07_Visualisation/01_introduction.typ"
-#include "04_segmentation_manuelle/04_segmentation_3D"
