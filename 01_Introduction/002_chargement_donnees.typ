@@ -56,21 +56,26 @@ Pour charger une séquence d'image dans Dragonfly  (Version 2024.1):
         - Une fenêtre intitulée #text(weight: "bold")["Import image"] s'affiche à l'écran. 
           ]
 
+// Insert space
+#v(25pt, weak: true)
 // Image
     #figure(
       image("../Image/0002.PNG", width: 100%),
       caption: [Fenêtre : Import Image])
-
+// Insert space
+#v(25pt, weak: true)
  
 - #emph(text(red)[Add : Permet d'ajouter les fichiers d'images présent dans un dossier.])     
 - #emph(text(aqua)[Open Folder: Permet d'ajouter les fichiers d'images présent dans un dossier.])
 - #emph(text(fuchsia)[Preview: Permet de prévisualiser les fichiers avant de les importer. ])
 - #emph(text(lime)[Next: Cliquer sur Next une fois vos données sont chargé.])
-                      
-          
+// Insert space
+#v(25pt, weak: true)
 
 
 Vous pouvez prévisualiser les fichiers avant de les importer.
+// Insert space
+#v(25pt, weak: true)
 
 // Etapes 
 Pour charger vos images:
@@ -84,14 +89,19 @@ Pour charger vos images:
           - Cliquer sur : #text(weight: "bold")[Finish]
           ]
 
+// Insert space
+#v(25pt, weak: true)
 
 === Paramètres d'image
 // Insert space
 #v(25pt, weak: true)
 Lors de l'importation d'une séquence d'images, ou de données brutes, il est essentiel de spécifier l'ensemble des paramètres suivant:
+// Insert space
+#v(25pt, weak: true)
+
 // Image
     #figure(
-      image("../Image/0003.PNG", width: 100%),
+      image("../Image/0003.PNG", width: 80%),
       caption: [Les paramètres d'image])           
 
 // Insert space
@@ -112,11 +122,15 @@ Lors de l'importation d'une séquence d'images, ou de données brutes, il est es
 Les autres paramètres #text(weight: "bold")[(Physical conversion, Transform, RGB output)] sont utilisés que dans le cas de certains formats de fichiers. Plus d'informations sont présentes via le lien suivant: #link("https://www.theobjects.com/dragonfly/dfhelp/2024-1/Default.htm#Importing%20Data/Using%20the%20Image%20Loader/Image%20Loader%20Interface.htm")[
 Paramètres d'image]
 
-
+// Insert space
+#v(25pt, weak: true)
 === Chargement de données brutes
 // Insert space
 #v(25pt, weak: true)
+
 Si le format de vos fichiers ne figure pas parmi ceux acceptés par Dragonfly, vous avez la possibilité de les importer sous forme de données brutes.
+// Insert space
+#v(25pt, weak: true)
 
 Pour charger des données brutes: 
 
@@ -135,7 +149,7 @@ Pour charger des données brutes:
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0004.jpg", width: 100%),
+      image("../Image/0004.jpg", width: 80%),
       caption: [Chargement de données brutes],
            )
 
@@ -148,7 +162,7 @@ Une fois que vous avez les fichiers affichés, il faudra indiquer les caractéri
 
 // Image
     #figure(
-      image("../Image/0005.jpg", width: 100%),
+      image("../Image/0005.jpg", width: 80%),
       caption: [Caractéristiques des données brutes],
            )
 

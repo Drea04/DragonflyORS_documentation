@@ -10,6 +10,8 @@
 
 La partie *Main Tab* comprend divers outils pour la manipulation des jeu de données ainsi que leur analyse. Les sections qui permettent d'expliquer comment manipuler les données seront expliquées dans cette partie. 
 
+// Insert space
+#v(25pt, weak: true)
 
 // Image
     #figure(
@@ -30,9 +32,9 @@ La partie *Main Tab* comprend divers outils pour la manipulation des jeu de donn
       caption: [Manipulate Tools],
            )
 
-
  // Insert space
 #v(25pt, weak: true)
+
 La fenêtre manipulate dans le Main tab permet de manipuler votre jeu de données une fois celui-ci est chargée dans Dragonfly.
 
 + #text(weight: "bold")[Track :] Permet de déplacer le curseur en 3D et de pivoter le jeu de données librement en 3D. 
@@ -56,6 +58,9 @@ La fenêtre manipulate dans le Main tab permet de manipuler votre jeu de donnée
 
 
 == Utilisation de la fenêtre :Flipping and Rotating
+// Insert space
+#v(25pt, weak: true)
+
 // Image
 #figure(
   image("../Image/0010.PNG", width: 100%),

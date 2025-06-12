@@ -1,7 +1,6 @@
 #import "@preview/mantys:1.0.0": *
 #import "@preview/treet:0.1.1": *
 
-#set outline.entry(fill: none)
 #set text(
   lang: "fr", 
   size: 5pt)

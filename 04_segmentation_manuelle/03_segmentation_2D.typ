@@ -8,14 +8,22 @@
 Dans beaucoup de cas, le seuillage n’est pas adapté pour effectuer la sélection de pixels, il faut segmenter manuellement les classes. IL existe plusieurs outils de segmentation manuelle dans Dragonfly. 
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 // Image
     #figure(
       image("../Image/0084.png", width:80%),
       caption: [Les outils de segmentation manuelle],
     )
-// Insert space
-#v(30pt, weak: true)
+
+//Saut de page
+#pagebreak()
+
+
+
+
+
+
 
 
 == Segmentation manuelle avec la brosse
@@ -36,46 +44,89 @@ Pour segmenter une région manuellement à l’aide de la brosse :
 
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 - Pour ajouter des pixels (segmentation): maintenir *Ctrl + Clic gauche* et déplacer la souris sur la zone d’intérêt 
 - Pour effacer/retirer des pixels: maintenir *Shift + Clic gauche* et déplacer la souris sur la zone à retirer. 
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 // Image
     #figure(
-      image("../Image/0071.png", width:80%),
+      image("../Image/0071.png", width:60%),
       caption: [Option #text(weight: "bold")[Brush Size]],
     )
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
 
 === Les différents options de la brosse
+// Insert space
+#v(25pt, weak: true)
+
+
+
 ==== Single slice vs multi-slice
+// Insert space
+#v(25pt, weak: true)
 - Single Slice : L'annotation ne s'effectue que sur la vue en cours.
 - Multi Slice : L'annotation est étendue à lusieurs images du volume en fonction de la taille de la brosse sélectionnée. 
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
 
 
 ==== Forme de la brosse
+// Insert space
+#v(25pt, weak: true)
 - Brosse Ronde: Prend la forme d'un cercle en mode single slice et d'une sphère en mode multi-slice
 - Brosse carrée: Prend la forme d'un carré en mode single slice et en cube en mode multi slice. 
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
 
 
 ==== Taille de la brosse
-
+// Insert space
+#v(25pt, weak: true)
 Pour modifier la taille de la brosse, il existe deux méthodes:
 - Avec la souris: Maintenir *Ctrl + molette de la souris* pour augmenter ou réduire la taille.
 - Avec l'option Brush size dans le ROI painter: Préciser la taille de la brosse en Pixels ou en nm/mm. 
-
+// Insert space
+#v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0070.png", width:50%),
+      image("../Image/0070.png", width:40%),
       caption: [Option #text(weight: "bold")[Brush Size]],
     )
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
+
+
 
 
 ==== Type de la brosse
+// Insert space
+#v(25pt, weak: true)
+
 Il y a trois types de brosses dans Dragonfly
 - Brosse pleine (Full)
 - Brosse avec un filtre gaussien adaptative (Adaptative Gaussian)
@@ -84,52 +135,83 @@ Il y a trois types de brosses dans Dragonfly
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0072.png", width:50%),
+      image("../Image/0072.png", width:40%),
       caption: [Option: Type de brosse],
     )
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+
+
 ===== Brosse pleine (Full)
 Tous les pixels (voxels) à l'intérieur de l'aire ou du volume de la brosse  seront marqués
 // Insert space
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0075.png", width:50%),
+      image("../Image/0075.png", width:40%),
       caption: [Brosse: Full],
     )
 
-
-
-
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
+
 ===== Brosse Adaptative Gaussian
+// Insert space
+#v(25pt, weak: true)
+
 Ce type de brosse applique un seuil local lors de la peinture. La valeur du seuil est déterminée par les intensités des pixels dans l'aire de la brosse (somme pondérée des intensités des pixels, moins une constante, avec des poids suivant un modèle gaussien).
 // Insert space
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0073.png", width:90%),
+      image("../Image/0073.png", width:80%),
       caption: [Brosse: Adaptive Gaussian],
     )
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+
 ===== Brosse Local Otsu
 Ce type de brosse applique un seuil local lors de la peinture. La valeur du seuil est déterminée en maximisant la variance entre deux classes de pixels dans l'environnement local défini par l'aire de la brosse. Cochez la case « upper » ou « lower » pour sélectionner les pixels au-dessus ou en dessous du seuil.
 // Insert space
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0074.png", width:90%),
+      image("../Image/0074.png", width:80%),
       caption: [Brosse: Local Otsu],
     )
-// Insert space
-#v(30pt, weak: true)
-
 
 //Saut de page
 #pagebreak()
+
+
+
+
+
+
+
+
+
+
 == Segmentation avec l'outil Point and Click
 // Insert space
 #v(25pt, weak: true)
@@ -147,7 +229,8 @@ Il y a trois outils *Point and Click* dans Dragonfly:
       caption: [Outil: *Point and Click*],
     )
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 
 Pour segmenter l'outil *Point & Click*
 
@@ -162,7 +245,8 @@ Pour segmenter l'outil *Point & Click*
           ]
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 - Pour segmenter, maintenir *Ctrl + Clic gauche* et déplacer la souris sur la zone d’intérêt 
 
 - Pour effacer/retirer des pixels, maintenir *Shift + Clic gauche* et déplacer la souris sur la zone à retirer. 
@@ -175,15 +259,27 @@ Pour segmenter l'outil *Point & Click*
       image("../Image/0091.png", width:70%),
       caption: [Outil: *Point and Click*],
     )
-// Insert space
-#v(30pt, weak: true)
+
+//Saut de page
+#pagebreak()
+
+
+
+
+
+
+
+
 
 === Les niveaux de connectivité
+// Insert space
+#v(25pt, weak: true)
 ==== 4-connected
+// Insert space
+#v(25pt, weak: true)
 La connexité 4 (4-connected) signifie que la propagation s’effectue en tenant compte uniquement des pixels qui sont en contact avec les quatre côtés (haut, bas, gauche, droite) des pixels sélectionnés.
 
 Un pixel P est un voisin 4 d’un pixel donné Q si P et Q partagent un bord.
-
 
 // Insert space
 #v(25pt, weak: true)
@@ -193,8 +289,16 @@ Un pixel P est un voisin 4 d’un pixel donné Q si P et Q partagent un bord.
       caption: [Outil: *Point and Click*],
     )
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
 ==== 8-connected 
+// Insert space
+#v(25pt, weak: true)
 La connexité 8 (8-connected) signifie que la propagation s’effectue en prenant en compte les pixels en contact avec les quatre côtés ainsi que les quatre coins des pixels sélectionnés.
 
 Un pixel P est un voisin 8 (ou simplement un voisin) d’un pixel donné Q si P et Q partagent soit un bord, soit un sommet.
@@ -207,20 +311,54 @@ Un pixel P est un voisin 8 (ou simplement un voisin) d’un pixel donné Q si P 
       caption: [Outil: *Point and Click*],
     )
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+
 
 
 === Les différents outils Point & Click
-
+// Insert space
+#v(25pt, weak: true)
 
 ==== Point & Click Tool
+// Insert space
+#v(25pt, weak: true)
 L’outil "Point & Click" permet d’ajouter ou de retirer des pixels connectés partageant les mêmes caractéristiques que ceux déjà sélectionnés (en fonction de la zone couverte par la brosse).
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
 
 
 ==== Outline Tool
+// Insert space
+#v(25pt, weak: true)
 L’outil "Outline" permet d’ajouter ou de retirer des pixels appartenant à un contour, en se basant sur une valeur d’intensité correspondant à celle de la sélection.
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+
+
+
 
 ==== Fill Tool
+// Insert space
+#v(25pt, weak: true)
 L’outil "Fill" remplit une région fermée à l’intérieur d’une ROI (région d’intérêt).
 
 Avec l’outil « Fill Tool », seul le pixel situé au centre de la zone couverte par la brosse est pris en compte pour la sélection.
@@ -234,11 +372,21 @@ Avec l’outil « Fill Tool », seul le pixel situé au centre de la zone couver
       caption: [Outil: *Point and Click*],
     )
 // Insert space
-#v(30pt, weak: true)
-
+#v(25pt, weak: true)
 
 //Saut de page
 #pagebreak()
+
+
+
+
+
+
+
+
+
+
+
 == Segmentation manuelle avec Smart Grid
 // Insert space
 #v(25pt, weak: true)
@@ -251,7 +399,7 @@ L'outil Smart Grid, qui fournit des régions de masque de contours pouvant être
       caption: [Outil: *Smart Grid*],
     )
 // Insert space
-#v(40pt, weak: true)
+#v(25pt, weak: true)
 Pour segmenter avec le Smart Grid:
 
 #tree-list[
@@ -275,9 +423,19 @@ Lorsque le découpage est satisfaisant, sélectionnez les grilles dans l'image e
       caption: [Outil: *Smart Grid*],
     )        
 
-
 //Saut de page
 #pagebreak()
+
+
+
+
+
+
+
+
+
+
+
 == Segmentation manuelle avec le Snap Tool
 // Insert space
 #v(25pt, weak: true)
@@ -291,7 +449,7 @@ Cet outil crée automatiquement une ligne de contour en se basant sur un gradien
       caption: [Outil: *Path Tool*],
     )
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 Pour segmenter avec le Path tool:
 
 #tree-list[
@@ -308,14 +466,20 @@ Pour segmenter avec le Path tool:
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0086.png", width:50%),
+      image("../Image/0086.png", width:40%),
       caption: [Segmentation avec Path Tool],
     )
 
 //Saut de page
 #pagebreak()
 
-          
+
+
+
+
+
+
+
 
 
 == Segmentation manuelle avec le Path Tool
@@ -358,6 +522,15 @@ Pour segmenter avec le Path tool:
 #pagebreak()
 
 
+
+
+
+
+
+
+
+
+
 == Segmentation manuelle avec les formes
 // Insert space
 #v(25pt, weak: true)
@@ -380,25 +553,51 @@ Pour segmenter avec les formes
       - Sélectionner une des formes présentes
           - Maintenir *Ctrl + Clic gauche* et dessiner la forme de la région à segmenter
           ]
-// Insert space
-#v(30pt, weak: true)
+
+
+
+
+
+
+
+
 === Rectangle ou Ellipse
+// Insert space
+#v(25pt, weak: true)
 Positionnez le curseur sur l’image, puis étendez la sélection jusqu’à la taille désirée tout en maintenant la touche Ctrl pour l’ajouter à la ROI (utilisez la touche Maj pour retirer des pixels de la ROI).
-// Insert space
-#v(30pt, weak: true)
+
+
+
+
+
+
+
+
+
 === Polygone 
-Cliquez successivement pour définir les sommets d’une région polygonale, toujours en maintenant la touche Ctrl pour l’ajouter à la ROI (Maj pour retirer).
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+Cliquez successivement pour définir les sommets d’une région polygonale, toujours en maintenant la touche Ctrl pour l’ajouter à la ROI (Maj pour retirer).
+
+
+
+
+
+
+
+
+
+
+
 === Tracé libre
+// Insert space
+#v(25pt, weak: true)
 Dessinez un contour point par point en déplaçant le curseur tout en maintenant la touche Ctrl afin d’ajouter la zone à la ROI (Maj pour la retirer).
 
 
- // Insert space
-#v(30pt, weak: true)
 // Image
     #figure(
-      image("../Image/0088.png", width:80%),
+      image("../Image/0088.png", width:50%),
       caption: [Outil: *Smart Grid*],
     )      
 

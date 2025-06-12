@@ -4,31 +4,41 @@
 
 = Propriétés et paramètres des jeu de données en 2D
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 Les propriétés et les paramètres des jeu de données se trouvent à droite dans l'interface Dragonfly.
-
 
 // Image
     #figure(
-      image("../Image/0023.PNG", width: 50%),
+      image("../Image/0023.PNG", width: 30%),
       caption: [Les propriétés et les paramètres des données],
            )
 
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
-Nous expliquerons dans cette partie les outils de gestion des jeu de données, et les différents menu (Basic properties, Tools, 2D settings, 3D presets, 3D settings and Clip)
-
+Nous expliquerons dans cette partie les outils de gestion des jeu de données, et les différents menu:
+- Basic properties
+- Tools
+- 2D settings
+- 3D presets
+- 3D settings
+- Clip
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 
-//Saut de page
-#pagebreak()
+
+
+
+
+
+
+
+
 
 == Gestion des jeu de données et des objets
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 
 // Image
@@ -36,7 +46,10 @@ Nous expliquerons dans cette partie les outils de gestion des jeu de données, e
       image("../Image/0024.PNG", width: 70%),
       caption: [Gestion des jeu de données et des objets],
            )
-    
+
+// Insert space
+#v(25pt, weak: true)
+
 #set enum(numbering: "A")
 
 + - Affiche tous les jeu de donnés chargés dans Dragonfly
@@ -54,22 +67,34 @@ Nous expliquerons dans cette partie les outils de gestion des jeu de données, e
 
 //Saut de page
 #pagebreak()
+
+
+
+
+
+
+
+
+
 == Les propriétés d'un jeu de données
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 La fenêtre *Basic Properties* permet d'afficher les propriétés d'un jeu de donnée sélectionné. Les informations que l'on peut avoir sont: 
 
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 // Image
     #figure(
       image("../Image/0025.PNG", width:50%),
       caption: [Les propriétés d'un jeu de données],
            )
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 
 #set enum(numbering: "1.")
 + #text(weight: "bold")[Width (ou largeur):] Indique le nombre de pixels le long de l'axe X. Dans ce cas, la largeur est de 2344 px. La dimension physique est de 35 160 nm. 
@@ -90,13 +115,24 @@ La fenêtre *Basic Properties* permet d'afficher les propriétés d'un jeu de do
 //Saut de page
 #pagebreak()
 
+
+
+
+
+
+
+
+
+
 == L'histogramme
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 L'outil *Histogramme* permet d'afficher la distribution du jeu de données sélectionnées
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 // Image
     #figure(
@@ -104,31 +140,44 @@ L'outil *Histogramme* permet d'afficher la distribution du jeu de données séle
       caption: [Tools],
            )
 
+// Insert space
+#v(25pt, weak: true)
+
 Cet outil permet de générer des histogrammes pour les images. Lorsque vous sélectionnez un ensemble de données et cliquez sur l'icône bleue (histogramme), une nouvelle fenêtre s'ouvre, affichant l'histogramme.
 
 // Image
     #figure(
-      image("../Image/0064.png", width:100%),
+      image("../Image/0064.png", width:80%),
       caption: [Histogramme],
            )
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 Cette fenêtre affiche la distribution des intensités de pixels du jeu de données sélectionnés. 
 Nous pouvons également avoir des statistiques spécifiques concernant le jeu de données en cochant les cases spécifiques à chaque statistique (moyenne, median, minim, maximum etc...) 
 
 
-// Insert space
-#v(30pt, weak: true)        
+
+
+
+
+
+
+
+
+
 == Propriétés 2D
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 L'outil *Propriété 2D* permet de modifier l'apparence des images en 2D. Il existe trois apparences possibles:
 + #text(weight: "bold")[Linear :]  Nous obtenons un rendu lisse des images.
 + #text(weight: "bold")[Nearest :] Nous pouvons visualiser les pixels dans l'image. 
 + #text(weight: "bold")[cubic :] Donne un rendu intermédiaire entre 'linear' et 'nearest'
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 
 // Image
     #figure(
@@ -136,13 +185,16 @@ L'outil *Propriété 2D* permet de modifier l'apparence des images en 2D. Il exi
       caption: [L'interpolation],
     )
 
+// Insert space
+#v(25pt, weak: true)
 // Image
     #figure(
       image("../Image/0065.png", width:100%),
       caption: [Rendu de l'interpolation],
     )   
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 A gauche: Interpolation Nearest
 
 Au milieu: Interpolation Linéaire
@@ -154,15 +206,28 @@ A droite: Interpolation Cubique
 
 
 
+
+
+
+
+
+
+
+
+
 == 3D Presets, 3D Settings and Clip tools (à modifier)
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 // Image
     #figure(
       image("../Image/0028.PNG", width:50%),
       caption: [Outil3D presets],
     )
+
+// Insert space
+#v(25pt, weak: true)
 
 // 2 images en colomnes
 #figure(
@@ -174,16 +239,27 @@ A droite: Interpolation Cubique
     ),
     caption: "Outil 3D settings et Clip"
 )
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 L'utilisation des outils 3D Presets, 3D settings et Clip requiert que la fenêtre 3D soit sélectionnée. 
 Ces outils permettent d'appliquer des effets d'éclairage et de rendu 3D sur votre jeu de données. L'utilisation de ces outils sera développée dans la section visualisation et rendue en 3D. 
 
 //Saut de page
 #pagebreak()
+
+
+
+
+
+
+
+
+
+
 == Les propriétés de l'image 
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
 Afin d'obtenir les propriétés des images: 
 
@@ -193,20 +269,29 @@ Afin d'obtenir les propriétés des images:
     - Choisir #text(weight: "bold")[Image Properties]
       - La fenêtre #text(weight: "bold")[Image Properties] s'affiche
    ]
+
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 // Image
     #figure(
-      image("../Image/0062.png", width:50%),
+      image("../Image/0062.png", width:40%),
       caption: [Outil 3D presets],
     )
 
+
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
+
+
 Nous pouvons avoir les informations suivantes: 
 - La taille des pixels pour chacun des axes: X, Y et Z
 - La taille physique (en Mb et en volume)
 - L’espacement et l'intensité. 
+
+// Insert space
+#v(25pt, weak: true)
 
 Ces différents propriétés sont expliqués dans la partie "Paramètres d'images"
 

@@ -6,9 +6,17 @@
 // Insert space
 #v(25pt, weak: true)
 Jusqu'à présent, nous avons abordé des méthodes de segmentation en 2D, ce qui implique que, pour segmenter un objet 3D dans une pile d'images, il faut répéter la sélection des pixels image par image. Cependant, certains outils permettent de simplifier et d'accélérer la segmentation d'un objet en 3D.
-
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+
+
 == Segmentation d'objet 3D avec la brosse multi-Slice
 // Insert space
 #v(25pt, weak: true)
@@ -18,7 +26,8 @@ Ce mode permet d'ajouter ou de retirer des pixels sur plusieurs coupes successiv
 
 Pour observer le résultat de l'opération en 3D, il est nécessaire de démasquer le rendu 3D du dataset.
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
 Pour segmenter avec la brosse multi-slices:
 
 #tree-list[
@@ -29,9 +38,9 @@ Pour segmenter avec la brosse multi-slices:
         -  Choisir le mode #text(weight: "bold")[Multi Slice] dans #text(weight: "bold")[2D-view tools]
           -  Commencer à peindre la ROI dans la vue 2D.  
   ]
-*mettre les étapes en images*
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 Afin de visualiser la segmentation 3D en mode multi-slice:
 
 #tree-list[
@@ -40,9 +49,9 @@ Afin de visualiser la segmentation 3D en mode multi-slice:
     - Masquer le logo 3D du jeu de données à segmenter
       - L'objet en cours de segmentation apparaît dans la vue en 3D.
   ]
-*mettre les étapes en images* 
+
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
 Nous avons la possibilité d'utiliser le pinceau en 3D directement. Pour cela: 
 
 #tree-list[
@@ -57,8 +66,7 @@ Nous avons la possibilité d'utiliser le pinceau en 3D directement. Pour cela:
 
 
 
-// Insert space
-#v(30pt, weak: true)
+
 == Segmentation d'objet 3D par interpolation
 // Insert space
 #v(25pt, weak: true)

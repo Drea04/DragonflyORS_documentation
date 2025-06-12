@@ -15,12 +15,23 @@ Il existe plusieurs façons de créer une multi-ROI:
 - Enfin, à partir d'une ROI globale, il est possible d'identifier a posteriori les différents objets qu'elle contient, à condition qu'ils soient bien séparés. Cette étape de séparation est appelée labellisation, et permet d'attribuer un label unique à chaque objet, les transformant ainsi en ROIs distinctes à l'intérieur de la multi-ROI. 
 
 // Insert space
-#v(30pt, weak: true)
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+
+
+
 == Création d'une multi-ROI vide 
 // Insert space
 #v(25pt, weak: true)
 
 Pour créer une multi-ROI vide avec plusieurs classes:
+
 #tree-list[
 - Cliquer sur #text(weight: "bold")[Segment] dans l'onglet en haut à gauche 
   - Sélectionner :#text(weight: "bold")[ ROI Tools -> Basic] 

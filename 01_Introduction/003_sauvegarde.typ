@@ -8,6 +8,8 @@
 
 // Étapes
 Si vous souhaitez reprendre votre travail là où vous vous êtes arrêté, il est nécessaire de sauvegarder votre session. Pour cela, suivez ces étapes :
+// Insert space
+#v(25pt, weak: true)
 
 Dans le #text(weight: "bold")[menu] déroulant, sélectionnez :
 
@@ -17,6 +19,8 @@ Dans le #text(weight: "bold")[menu] déroulant, sélectionnez :
       -  La fenêtre de sauvegarde s'affiche à l'écran
         - Enregistrer votre session sous le format #text(weight: "bold")[Session Files (.ORSSession)] 
           ]
+// Insert space
+#v(25pt, weak: true)
 
 // Image
     #figure(
