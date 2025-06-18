@@ -23,7 +23,7 @@ Dans un premier temps, il est possible d'ajuster les caractéristiques de la sc�
 #v(25pt, weak: true)
 // Image
     #figure(
-      image("../Image/0095.png", width:100%),
+      image("../Image/0095.png", width:80%),
       caption: [Propriétés de la scène])
 // Insert space
 #v(25pt, weak: true)
@@ -38,7 +38,8 @@ Il est possible de modifier la couleur de fond, qui restera invariable au cours 
 
 Nous pouvons également chosir la couleur du fond 
 
-mettre l'effet des trois modes 
+*image 118*
+
 
 
 
