@@ -133,38 +133,251 @@ Les réglages qui peuvent être ajustés sont:
 - L'inclinaison de la surface sur l'axe ou elle se trouve 
 
 capture d'écran 
-
-
 #v(25pt, weak: true)
+
+
+
+
+
+
 == Génération d'un rendu 3D à partir des valeurs de pixels
+#v(25pt, weak: true)
+Il est possible d'obtenir un modèle 3D à partir de la pile d'images en sélectionnant l'icône ()
+#v(25pt, weak: true)
+- mettre l'image de l'icône
+- mettre image histogramme 
+- mettre image rendu 3D 
+#v(25pt, weak: true)
+L'histogramme permet de modifier l'affichage des voxels. Le nombre de voxels par valeur est représentée sur l'histogramme. 
+#v(25pt, weak: true)
+Pour modifier l'affichage des voxels, nous pouvons
+- Déplacer les barres jaunes. Le déplacement vers le centre de l'histogramme permet d'exclure les voxels alors que le déplacement des barres vers les extrémités permet d'inclure les voxels. 
+- Modifier la courbe entre les barres jaunes, afin d'avoir l'affichage de tous les voxels en dessous de la courbe. 
+#v(25pt, weak: true)
+Exemples de modifications d'affichage en déplaçant les barres jaunes :
+- affichage exterieur
+- affichage intérieur
+#v(25pt, weak: true)
 
-#v(20pt, weak: true)
+
+
+
+
+
+
+=== Modification de l'opacité du rendu 3D 
+Nous pouvons modifier l'opacité du randu 3D avec le menu "Opacity Mapping"
+#v(25pt, weak: true)
+- mettre une image du menu avec les explications et les noms
+- mettre une image d'un Exemples
+
+
+Il est possible de choisir le type d'aire sous la courbe, influençant ainsi l'affichage des voxels du rendu 3D.
 
 // Insert space
 #v(25pt, weak: true)
-== Modifier les propriétés de la pile d'images
+
+
+
+
+
+
+== Modifier les propriétés de la séquence d'images
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
+Nous pouvons modifier différentes propriétés de la séquence d'image. Ceci nous permet de modifier finement l'affichage du rendu 3D et/ou de couper dans notre volume (clip).
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image du menu propriété de la pile d'image 
+// Insert space
+#v(25pt, weak: true)
+
+=
+=
+
+
+=== Paramètre Solidity
+Paramètre Solidity par défaut au centre, faible à gauche et élevé à droite. Il ny a pas besoin de lumière pour le modifier 
+// Insert space
+#v(25pt, weak: true)
+// Image
+#figure(
+  image("../Image/118.png", width:100%),
+  caption: [Paramètre Solidity par défaut au Centre, faible à gauce et élevé à droite.])
+// Insert space
+#v(25pt, weak: true)
+
+
+=== Paramètre Diffuse
+Paramètre diffuse par défaut au centre, faible à gauche et élevé à droite. Il s'applique sur la lumière appliquée au rendu 3D
+// Insert space
+#v(25pt, weak: true)
+// Image
+#figure(
+  image("../Image/119.png", width:100%),
+  caption: [Paramètre Diffuse par défaut au Centre, faible à gauce et élevé à droite.])
+// Insert space
+#v(25pt, weak: true)
+
+
+
+=== Paramètre Specular
+Paramètre specular par défaut au centre, faible à gauche et élevé à droite. Il s'applique sur la lumière appliquée au rendu 3D
 
 // Insert space
 #v(25pt, weak: true)
-== Propriétés 3D
+// Image
+#figure(
+  image("../Image/119.png", width:100%),
+  caption: [Paramètre Solidity par défaut au Centre, faible à gauce et élevé à droite.])
 // Insert space
-#v(20pt, weak: true)
+#v(25pt, weak: true)
 
-=== Solidité
-=== Diffuse
-=== Specular
-=== Shininess
-=== Tone mapping
-=== Unsharp
-=== Specular boost
-=== Filtered gradient
+
+
+
+
+
+
+
+=== Paramètre Shininess
+// Insert space
+#v(25pt, weak: true)
+Paramètre shininess par défaut au centre, faible à gauche et élevé à droite. Il s'applique sur la lumière appliquée au rendu 3D
+
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image rendu Shininess
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
+
+=== Paramètre Tone mapping
+// Insert space
+#v(25pt, weak: true)
+Paramètre Tone mapping activé (droite) et non activée (gauche). Il n’y a pas besoin de l’effet de lumière activé
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image rendu Tone mapping
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
+
+
+=== Paramètre Unsharp
+// Insert space
+#v(25pt, weak: true)
+Paramètre Unsharp activé (droite) et non activée (gauche). Il s'applique sur la lumière appliquée au rendu 3D
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image Unsharp
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+=== Paramètre Specular boost 
+// Insert space
+#v(25pt, weak: true)
+Paramètre Specular boost activé (droite) et non activée (gauche). Il s’applique sur la lumière appliquée au rendu 3D
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image Specular boost 
+// Insert space
+#v(25pt, weak: true)
+
+
+=== Paramètre Filtered gradient
+// Insert space
+#v(25pt, weak: true)
+Paramètre Filtered gradient activé (droite) et non activée (gauche). Il s’applique sur la lumière appliquée au rendu 3D
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image 
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
 === High quality
+// Insert space
+#v(25pt, weak: true)
+Paramètre High quality activé (droite) et non activée (gauche). Il n’y a pas besoin de l’effet de lumière activé
+
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image 
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
 === Median
+// Insert space
+#v(25pt, weak: true)
+Paramètre Median activé (droite) et non activée (gauche). Il n’y a pas besoin de l’effet de lumière activé
+
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image 
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
+
+
 === Edge contrast
+// Insert space
+#v(25pt, weak: true)
+
+Paramètre Edge contrast par défaut au centre, faible à gauche et élevé à droite. Il n’y a pas besoin de lumière pour le modifier
+// Insert space
+#v(25pt, weak: true)
+- mettre l'image 
+// Insert space
+#v(25pt, weak: true)
+
+Interpolation des voxels Linear au centre par défaut, Nearest à gauche et Cubic à droite
+
+Tous ces paramètres peuvent être combinés ensemble pour obtenir le rendu 3D souhaité à partir de la pile d’images.
+
+
+
+
+
+
+
 
 == Clip 
+// Insert space
+#v(25pt, weak: true)
+La fonction de Clip quant à elle permet de couper le rendu 3D de la pile d’images. Elle est activée en cliquant sur l’icône . Pour faire le clip dans une direction, il faut cliquer sur la face du rectangle entourant la surface/le rendu 3D et la déplacer vers l’intérieur/l’extérieur de celui-ci.
+Nous obtiendrons notre rendu 3D plein même avec le clip.  
+
+
+
+
+// Insert space
+#v(25pt, weak: true)
+
+
+
+
 
 == Génération d'un maillage polygonal (mesh)
 === modifier les propriétés d'un maillage
