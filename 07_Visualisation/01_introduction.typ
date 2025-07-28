@@ -30,18 +30,11 @@ Dans un premier temps, il est possible d'ajuster les caractéristiques de la sc�
 
 
 
-
-
-
 === Modification de la couleur de fond
 // Insert space
 #v(25pt, weak: true)
-Il est possible de modifier la couleur de fond, qui restera invariable au cours des animations. Trois modes sont possibles:
-- Le mode *Uniforme* pour un teint unie. Ce mode là est le paramètre par défaut. 
-- Le mode *Gradient Linéaire* qui permet de choisir la direction
-- Le mode *Gradient Radial* 
+Il est possible de modifier la couleur de fond, qui restera invariable au cours des animations. Cette modification s'effectue dans le sous-menu "3D Views Background Color", accessible depuis le menu "Scene's Views and Properties". 
 
-Nous pouvons également chosir la couleur du fond 
 
 #v(25pt, weak: true)
 // Image
@@ -51,6 +44,32 @@ Nous pouvons également chosir la couleur du fond
 // Insert space
 #v(25pt, weak: true)
 
+Trois modes de couleur de fond sont possibles:
+// Insert space
+#v(15pt, weak: true)
+- Le mode *Uniforme* pour un fond uni. Ce mode est sélectionné par défaut.
+- Le mode *Gradient Linéaire*, qui permet de choisir la direction du dégradé.
+- Le mode *Gradient Radial*, pour un effet de dégradé circulaire.
+
+
+// Insert space
+#v(25pt, weak: true)
+
+*mettre trois images côte à côte de Uniforme, Gradient linéaire et Gradient Radial*
+
+// Insert space
+#v(25pt, weak: true)
+
+=== Mise au point "*Focus*"
+// Insert space
+#v(25pt, weak: true)
+Les propriétés de mise au point permettent de faire ressortir clairement les objets d'intérêt ou, au contraire, de flouter certains éléments de l'image afin de mieux guider l'attention de l'observateur.
+// Image
+#figure(
+  image("../Image/0125.png", width:50%),
+  caption: [Modification du focus])
+// Insert space
+#v(25pt, weak: true)
 
 
 
@@ -69,15 +88,23 @@ Les options d'éclairage présentées ci-dessous permettent de modificier la dir
 // Insert space
 #v(25pt, weak: true)
 
-1. Modification de la direction de l'éclairage: Cette option est possible en déplacer l'éclairage directement sur la sphère grise. 
-2. Choix du nombre d'éclairage: Nous pouvons avoir 1, 2 ou 3 éclairages. Pour sélectionner les clairages, cliquer sur Light1 etc. 
-3. Mofidication de l'éclairage des objets en 3D: La case *Use lighting* permet d'éclairer l'objet en 3D sélectionné. 
-4. Modification de l'ombre: La case *Use shadows* permet de modifier l'ombre de l'objet en 3D sélectionné. 
-5. Nous pouvons modifier l'intensité de l'éclairage et de l'ombre avec les options:
-   - Light Intensity
-   - Shadows Strength
-   - Shadow opacity
-  
+1.* Modification de la direction de l'éclairage:* Cette option est possible en déplaçant la source lumineuse directement sur la sphère grise.
+
+
+2. *Choix du nombre d'éclairage:* Il est possible d'activer 1, 2 ou 3 sources d'éclairage. Pour les sélectionner, cliquez sur Light1, Light2, etc.
+
+
+3.* Mofidication de l'éclairage des objets en 3D:* La case *Use lighting* permet d'activer l'éclairage sur l'objet 3D sélectionné.
+
+
+4. *Modification des ombres:* La case *Use shadows* permet d'afficher les ombres de l'objet 3D sélectionné.
+
+
+5. *Réglage de l'intensité de l'éclairage et des ombres :* Ces paramètres permettent d'affiner le rendu visuel :
+   - Light Intensity: Intensité de la lumière
+   - Shadows Strength: Intensité des ombres
+   - Shadow opacity: Opacité des ombres
+
 // Insert space
 #v(25pt, weak: true)
 
@@ -90,25 +117,11 @@ Les options d'éclairage présentées ci-dessous permettent de modificier la dir
 
 
 
-=== Mise au point "*Focus*"
-// Insert space
-#v(25pt, weak: true)
-// Image
-#figure(
-  image("../Image/0125.png", width:50%),
-  caption: [Modification du focus])
-// Insert space
-#v(25pt, weak: true)
-Les propriétés de mise au point permettent de définir clairement les objets intéressants ou de flouter certains objets au niveau de l'image. 
-// Insert space
-#v(25pt, weak: true)
-
-
 
 === Faire une capture d'écran
 // Insert space
 #v(25pt, weak: true)
-Pour capturer une image de la vue 3D, nous avons deux options:
+Pour capturer une image de la vue 3D, deux options sont disponibles :
 // Insert space
 #v(25pt, weak: true)
 - Utiliser l'option *Export Screenshot* dans le menu *Scene's views and properties*
@@ -116,106 +129,134 @@ Pour capturer une image de la vue 3D, nous avons deux options:
   // Image
 #figure(
   image("../Image/0124.png", width:50%),
-  caption: [Capture d'écran])
-enregistrement .tif, .png, .jpeg, .bitmap 
+  caption: [Capture d'écran depuis le menu])
+
+Cette option permet d'enregistrer l'image aux formats suivants :
+.tif, .png, .jpeg, .bmp
+
   // Insert space
 #v(25pt, weak: true)
-- Effectuer un clic droit sur la vue 3D et sélectionner *Export Screenshot of View*. Cette fonction fonctionne aussi pour les vues en 2D. 
+- Faire un clic droit sur la vue 3D (ou 2D) et sélectionner *Export Screenshot of View*.
+ 
 // Image
 #figure(
   image("../Image/0100.png", width:45%),
-  caption: [Capture d'écran])
+  caption: [Capture d'écran depuis un clic droit])
 
-Nous pouvons enregistrer la capture d'écran sous plusieurs formats:
-- .tif
-- .png
-- .jpeg
-- .bitmap
+Cette fonction est compatible avec les vues 3D et 2D.
+Elle permet également d'enregistrer aux formats :
+.tif, .png, .jpeg, .bmp
 
-
+#v(25pt, weak: true)
 
 
 
+//Saut de page
+#pagebreak()
 === Sol virtuel
 #v(25pt, weak: true)
 
-Nous pouvons intégrer une surface réfléchissante pour enrichir l'aspect visuel de notre modélisation 3D. Cette modification s'applique au rendu 3D, aux ROI et au maillage polygonal. 
+Il est possible d'intégrer une surface réfléchissante pour enrichir l'aspect visuel de la modélisation 3D. Cette option s'applique au rendu 3D, aux ROI, ainsi qu'au maillage polygonal.
+
+* Mettre comment accéder au sol virtuel*
+
 
 #v(25pt, weak: true)
+
 // Image
 #figure(
   image("../Image/0122.png", width:30%),
-  caption: [Virtual Floor])
+  caption: [Sol virtuel (Virtual Floor)])
 #v(25pt, weak: true)
 
-Les réglages qui peuvent être ajustés sont:
+
+Les réglages suivants peuvent être ajustés :
 #v(10pt, weak: true)
-- L'intensité de la réfléxion (Reflective surface)
-- La couleur de la surface réfléchissante (Color)
-- L'espacement entre la surface et l'objet 3D (Distance)
-- La position de la surface sur un des axes de l'objet 3D (Position)
-- L'inclinaison de la surface sur l'axe ou elle se trouve (Tilt)
+- *Reflective Surface :* intensité de la réflexion
+- *Color :* couleur de la surface réfléchissante
+- *Distance :* espacement entre la surface et l'objet 3D
+- *Position :* position de la surface selon un axe de l'objet
+- Tilt : inclinaison de la surface sur l'axe concerné
 
 #v(25pt, weak: true)
-
-
-
 
 
 
 == Génération d'un rendu 3D
 #v(25pt, weak: true)
-Il est possible d'obtenir un modèle 3D à partir de la pile d'images en sélectionnant l'icône 3D dans le menu "Data Properties and Settings"
+Il est possible de générer un modèle 3D à partir d'une pile d'images en cliquant sur l’icône 3D du menu "Data Properties and Settings".
 #v(25pt, weak: true)
 
-L'histogramme permet de modifier l'affichage des voxels. Le nombre de voxels par valeur est représentée sur l'histogramme. 
+* mettre une image de l'icône oeil*
+
+Lorsque le modèle 3D est généré, un histogramme s'affiche automatiquement pour permettre le réglage de l'affichage des voxels. *mettre ou est il affiché* Cet histogramme permet de modifier l'affichage des voxels. Le nombre de voxels par valeur est représentée sur l'histogramme. 
 #v(25pt, weak: true)
 // Image
 #figure(
   image("../Image/0127.png", width:100%),
   caption: [Rendu 3D])
+  * mettre une autre image pour le rendu 3D*
 
 #v(25pt, weak: true)
 
-Pour modifier l'affichage des voxels, nous pouvons
-- Déplacer les barres jaunes. Le déplacement vers le centre de l'histogramme permet d'exclure les voxels alors que le déplacement des barres vers les extrémités permet d'inclure les voxels. 
-- Modifier la courbe entre les barres jaunes, afin d'avoir l'affichage de tous les voxels en dessous de la courbe. 
 
-IL existe aussi l'outil "Color mapping" qui permet de faire cela
+
+=== Contrôle de l'affichage des voxels
+#v(25pt, weak: true)
+
+Plusieurs actions sont possibles pour affiner le rendu :
+- *Déplacement des barres jaunes :*
+  - Les déplacer vers le centre de l'histogramme permet d'exclure des voxels.
+  - Les déplacer vers les extrémités permet d'en inclure davantage.
+
+- *Modification de la courbe entre les barres :*
+  - Tous les voxels situés sous la courbe sont rendus visibles.
+  - La courbe permet un contrôle fin du seuil d-intensité.
+
+#v(25pt, weak: true)
+Il existe également l'outil "Color Mapping", qui permet de modifier les seuils et l'apparence des voxels en fonction de leur intensité.
 #v(25pt, weak: true)
 // Image
 #figure(
   image("../Image/0129.png", width:40%),
-  caption: [Rendu 3D])
+  caption: [Outil Color Mapping pour le rendu 3D])
+
+* modifier cette capture d'écran pour la nouvelle version*
 
 #v(25pt, weak: true)
 
-Exemples de modifications d'affichage en déplaçant les barres jaunes :
-- affichage exterieur
+==== Exemples de rendus selon la position des barres jaunes
+- *Affichage extérieur :* seuls les voxels périphériques sont visibles.
+
 #v(25pt, weak: true)
 // Image
 #figure(
   image("../Image/0128.png", width:100%),
-  caption: [Rendu 3D])
+  caption: [Exemple de rendu 3D filtré par l'histogramme])
 #v(25pt, weak: true)
-
+ * Ajout exemple Modification de la courbe entre les barres :*
 
 
 === Modification de l'opacité du rendu 3D 
 #v(25pt, weak: true)
-Nous pouvons modifier l'opacité du rendu 3D avec le menu "Opacity Mapping"
-#v(25pt, weak: true)
-#v(25pt, weak: true)
+L'opacité du rendu 3D peut être modifiée à l'aide du menu "Opacity Mapping". *mettre ou se trouve opacity mapping*
+
+ #v(25pt, weak: true)
 // Image
 #figure(
   image("../Image/0130.png", width:50%),
-  caption: [Rendu 3D])
+  caption: [Accès au menu Opacity Mapping])
 #v(25pt, weak: true)
 
-Il est possible de choisir le type d'aire sous la courbe, influençant ainsi l'affichage des voxels du rendu 3D.
-// Insert space
+Ce menu permet de régler la courbe d'opacité, influençant la visibilité des voxels selon leur intensité.
+
+
+Il est possible de modifier la forme de la courbe ou le type de zone (aire) sous la courbe afin d'obtenir des effets de transparence spécifiques dans le rendu 3D.
+
 #v(25pt, weak: true)
+==== Exemple:  Modification de l'opacité du rendu 3D 
 #v(25pt, weak: true)
+
 // Image
 #figure(
   image("../Image/0131.png", width:80%),
@@ -290,22 +331,36 @@ Exemple d'applications
 == Modifier les propriétés de la séquence d'images
 // Insert space
 #v(25pt, weak: true)
-Nous pouvons modifier différentes propriétés de la séquence d'image. Ceci nous permet de modifier finement l'affichage du rendu 3D et/ou de couper dans notre volume (clip).
+Il est possible de modifier plusieurs propriétés liées à la séquence d'images. Ces réglages permettent d'ajuster finement l'affichage du rendu 3D et/ou de découper le volume affiché à l'aide de l'outil de clipping situé à droite. 
 // Insert space
 
 #v(25pt, weak: true)
 // Image
 #figure(
   image("../Image/0138.png", width:40%),
-  caption: [Menu Propriétés 3D])
-#v(25pt, weak: true)
- 
-// Insert space
+  caption: [Menu des propriétés 3D])
 #v(25pt, weak: true)
 
 
-=== Paramètre Solidity
-Paramètre Solidity par défaut au centre, faible à gauche et élevé à droite. Il ny a pas besoin de lumière pour le modifier 
+
+//Saut de page
+#pagebreak()
+
+=== Les différents paramètres 
+#v(25pt, weak: true)
+==== Paramètre Solidity
+#v(25pt, weak: true)
+Le paramètre *Solidity* définit l'opacité perçue des voxels selon un rendu non linéaire : cela crée un effet plus dense que la simple opacité. 
+#v(25pt, weak: true)
+Le paramètre "Solidity" est par défaut au centre. 
+
+- Solidity faible (valeur basse)
+  - Les voxels sont plus transparents, même s'ils ont une intensité élevée. 
+  - L'image paraît plus diffuse. 
+  - Les structures internes peuvent être plus visibles, mais le rendu est souvent moins contrasté
+- Solidity élevée (valeur haute):
+  - Les voxels apparaissent plus denses et plus opaques, même avec peu d'intensité
+  - Risque de masquer les détails internes
 // Insert space
 #v(25pt, weak: true)
 // Image
@@ -315,9 +370,21 @@ Paramètre Solidity par défaut au centre, faible à gauche et élevé à droite
 // Insert space
 #v(25pt, weak: true)
 
-
+//Saut de page
+#pagebreak()
 === Paramètre Diffuse
-Paramètre diffuse par défaut au centre, faible à gauche et élevé à droite. Il s'applique sur la lumière appliquée au rendu 3D
+// Insert space
+#v(25pt, weak: true)
+Le paramètre "Diffuse" contrôle la lumière diffuse réfléchie par les surfaces. Augmenter la valeur améliore la définition visuelle des structures
+// Insert space
+#v(25pt, weak: true)
+Le paramètre "Diffuse" est par défaut au centre. 
+- Diffuse faible (valeur basse):
+  - Les surfaces sont difficiles à distinguer
+  - Les détails de forme et de relief sont moins visibles. 
+- Diffuse élevée (valeur haute)
+  - La lumière se diffuse fortement sur les surfaces
+  - Les reliefs deviennent plus visibles. Cela donne un rendu plus contrasté. 
 // Insert space
 #v(25pt, weak: true)
 // Image
@@ -328,9 +395,22 @@ Paramètre diffuse par défaut au centre, faible à gauche et élevé à droite.
 #v(25pt, weak: true)
 
 
-
+//Saut de page
+#pagebreak()
 === Paramètre Specular
-Paramètre specular par défaut au centre, faible à gauche et élevé à droite. Il s'applique sur la lumière appliquée au rendu 3D
+// Insert space
+#v(25pt, weak: true)
+Le paramètre "Specular" contrôle la quantité de lumière réfléchie de manière spéculaire (c'est-à-dire en reflets brillants, comme un miroir ou un éclat de lumière sur une surface polie). 
+// Insert space
+#v(25pt, weak: true)
+Le paramètre "Specular" est par défaut au centre. 
+- Specular faible:
+  - La surface paraît matte, sans éclats
+  - Pas de réfléchissant
+  - L'objet est moins brillant. 
+- Specular élevé:
+  - La surface montre des reflets brillants
+  - Le rendu donne l'impression que la surface est lisse ou polie
 
 // Insert space
 #v(25pt, weak: true)
@@ -347,11 +427,21 @@ Paramètre specular par défaut au centre, faible à gauche et élevé à droite
 
 
 
-
+//Saut de page
+#pagebreak()
 === Paramètre Shininess
 // Insert space
 #v(25pt, weak: true)
-Paramètre shininess par défaut au centre, faible à gauche et élevé à droite. Il s'applique sur la lumière appliquée au rendu 3D
+Le paramètre "Shininess" contrôle la taille et la netteté des reflets du paramètres "Specular". 
+
+Le paramètre "Specular" est par défaut au centre. 
+- Sininess faible:
+  - Les reflets sont larges et diffuse
+  - La lumière réfléchie est étalée sur une grande surface
+- Shininess élevé:
+  - Les reflets sont concentrés
+  - La lumière réfléchie forme des points brillants très précis
+  - La surface semble très lisse et brillante. 
 
 // Insert space
 #v(25pt, weak: true)
@@ -365,11 +455,21 @@ Paramètre shininess par défaut au centre, faible à gauche et élevé à droit
 
 
 
-
+//Saut de page
+#pagebreak()
 === Paramètre Tone mapping
 // Insert space
 #v(25pt, weak: true)
-Paramètre Tone mapping activé (droite) et non activée (gauche). Il n’y a pas besoin de l’effet de lumière activé
+Le paramètre "Tone mapping" est une technique utilisée pour adapter la plage dynamique d'une image à l'écran. Cela permet d'appliquer une rééchelle tonale dynamique pour préserver les détails dans des images à large plage dynamique. 
+
+Il existe deux possibilités: 
+- Tone Mapping désactivé: 
+  - L'image conserve sa plage dynamique naturelle. 
+  - Les zones très sombres peuvent apparaître complètement noire et les zones très claires complètement blanches. 
+  - Le contraste peut sembler trop fort, avec des détails cachés dans les extrêmes. 
+- Tone Mapping activé:
+  - Les détails dans zones sombres et claires sont mieux conservés. 
+  - Le rendu paraît plus équilibré, avec un contraste amélioré. 
 // Insert space
 #v(25pt, weak: true)
 // Image
@@ -381,10 +481,8 @@ Paramètre Tone mapping activé (droite) et non activée (gauche). Il n’y a pa
 
 
 
-
-
-
-
+//Saut de page
+#pagebreak()
 === Paramètre Unsharp
 // Insert space
 #v(25pt, weak: true)
