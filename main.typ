@@ -5,6 +5,11 @@
   lang: "fr", 
   size: 5pt)
 
+#set par(
+  justify: true,
+  leading: 1em,
+)
+
 #show: mantys(
   name: "mantys",
   version: "1.0.0",
