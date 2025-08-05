@@ -34,19 +34,32 @@ Dans un premier temps, il est possible d'ajuster les caractéristiques de la sc�
 
 
 === Modification de la couleur de fond
+
 // Insert space
 #v(25pt, weak: true)
-Il est possible de modifier la couleur de fond, qui restera invariable au cours des animations. Trois modes sont possibles:
-- Le mode *Uniforme* pour un teint unie. Ce mode là est le paramètre par défaut. 
-- Le mode *Gradient Linéaire* qui permet de choisir la direction
-- Le mode *Gradient Radial* 
 
-Nous pouvons également chosir la couleur du fond 
+Il est possible de modifier la couleur de fond, qui restera invariable au cours des animations. Cette modification s'effectue dans le sous-menu *3D Views Background color*, accessible depuis le *Scene's Views and Properties*. 
 
 #v(25pt, weak: true)
 // Image
     #figure(
       image("../Image/0123.png", width:40%),
+      caption: [Couleur de fond])
+// Insert space
+#v(25pt, weak: true)
+
+
+Trois modes de couleur de fond sont possibles:
+- Le mode *Uniforme* pour un fond uni. Ce mode est sélectionné par défaut.
+- Le mode *Gradient Linéaire*, qui permet de choisir la direction du dégradé.
+- Le mode *Gradient Radial*, pour un effet de dégradé circulaire. 
+
+Nous pouvons également chosir la couleur du fond (noir, blanc, gris etc..)
+
+#v(25pt, weak: true)
+// Image
+    #figure(
+      image("../Image/0147.png", width:100%),
       caption: [Couleur de fond])
 // Insert space
 #v(25pt, weak: true)
@@ -60,7 +73,7 @@ Nous pouvons également chosir la couleur du fond
 
 // Image
 #figure(
-  image("../Image/0097.png", width:70%),
+  image("../Image/0097.png", width:62%),
   caption: [Option d'éclairage])
 // Insert space
 #v(25pt, weak: true)
@@ -69,28 +82,21 @@ Les options d'éclairage présentées ci-dessous permettent de modificier la dir
 // Insert space
 #v(25pt, weak: true)
 
-1. Modification de la direction de l'éclairage: Cette option est possible en déplacer l'éclairage directement sur la sphère grise. 
-2. Choix du nombre d'éclairage: Nous pouvons avoir 1, 2 ou 3 éclairages. Pour sélectionner les clairages, cliquer sur Light1 etc. 
-3. Mofidication de l'éclairage des objets en 3D: La case *Use lighting* permet d'éclairer l'objet en 3D sélectionné. 
-4. Modification de l'ombre: La case *Use shadows* permet de modifier l'ombre de l'objet en 3D sélectionné. 
-5. Nous pouvons modifier l'intensité de l'éclairage et de l'ombre avec les options:
-   - Light Intensity
-   - Shadows Strength
-   - Shadow opacity
+1. *Modification de la direction de l'éclairage :* Cette option est possible en déplaçant la source lumineuse directement sur la sphère grise. 
+2. *Choix du nombre d'éclairage :* Il est possible d'activer 1, 2 ou 3 sources d'éclairage. Pour les sélectionner, cliquez sur *Light1*, *Light2*, etc..
+3. *Mofidication de l'éclairage des objets en 3D:* La case *Use lighting* permet d'activer l'éclairage sur l'objet 3D sélectionné.
+4. Modification des ombres: La case *Use shadows* permet d'afficher les ombres de l'objet 3D sélectionné.
+5. *Réglage de l'intensité de l'éclairage et des ombres :* Ces paramètres permettent d'affiner le rendu visuel:
+   - Light Intensity: INtensité de la lumière
+   - Shadows Strength: Intensité des ombres
+   - Shadow opacity: Opacité des ombres
   
 // Insert space
 #v(25pt, weak: true)
-*Mettre une image pour la direction de l'éclairage*
-
-*Mettre une image pour le nombre d'éclairage*
-
-*Mettre une image pour les Shadows*
-
-*Mettre une image pour l'intensité des éclairages*
 
 // Image
 #figure(
-  image("../Image/0096.png", width:100%),
+  image("../Image/0144.png", width:100%),
   caption: [Eclairage de l'objet en 3D et ombres])
 // Insert space
 #v(25pt, weak: true)
@@ -100,13 +106,19 @@ Les options d'éclairage présentées ci-dessous permettent de modificier la dir
 === Mise au point "*Focus*"
 // Insert space
 #v(25pt, weak: true)
+Les propriétés de mise au point permettent de faire ressortir clairement les objets d'intérêt ou, au contraire, de flouter certains éléments de l'image afin de mieux guider l'attention de l'observateur. 
 // Image
 #figure(
   image("../Image/0125.png", width:50%),
   caption: [Modification du focus])
 // Insert space
 #v(25pt, weak: true)
-Les propriétés de mise au point permettent de définir clairement les objets intéressants ou de flouter certains objets au niveau de l'image. 
+
+*Exemple de modification de focus*
+// Image
+#figure(
+  image("../Image/0145.png", width:100%),
+  caption: [Modification du focus: L’activation du focus, dans ce cas, a permis de flouter les bords de la structure tout en conservant les détails au centre. ])
 // Insert space
 #v(25pt, weak: true)
 
@@ -115,14 +127,12 @@ Les propriétés de mise au point permettent de définir clairement les objets i
 === Faire une capture d'écran
 // Insert space
 #v(25pt, weak: true)
-<<<<<<< HEAD
 Pour capturer une image de la vue 3D, nous avons deux options:
 // Insert space
 #v(25pt, weak: true)
 =======
 Pour capturer une image de la vue 3D, deux options sont disponibles :
 
->>>>>>> d9e913ba0e166a277c7e6eab0bd3f943e6f5c523
 - Utiliser l'option *Export Screenshot* dans le menu *Scene's views and properties*
 
   // Image
@@ -147,44 +157,34 @@ Nous pouvons enregistrer la capture d'écran sous plusieurs formats:
 
 
 
-
-=== Sol virtuel
+#pagebreak()
+== Sol virtuel
 #v(25pt, weak: true)
-
 Nous pouvons intégrer une surface réfléchissante pour enrichir l'aspect visuel de notre modélisation 3D. Cette modification s'applique au rendu 3D, aux ROI et au maillage polygonal. 
+
+Le menu *Sol virtuel* se trouve dans la section *Main*
 
 #v(25pt, weak: true)
 // Image
 #figure(
   image("../Image/0122.png", width:30%),
-<<<<<<< HEAD
-  caption: [Virtual Floor])
-=======
-  caption: [Menu Sol virtuel (Virtual Floor)])
->>>>>>> d9e913ba0e166a277c7e6eab0bd3f943e6f5c523
+  caption: [Menu Sol Virtuel (Virtual Floor)])
+
+
 #v(25pt, weak: true)
 
-Les réglages qui peuvent être ajustés sont:
+Les réglages suivants peuvent être ajustés :
 #v(10pt, weak: true)
-<<<<<<< HEAD
-- L'intensité de la réfléxion (Reflective surface)
-- La couleur de la surface réfléchissante (Color)
-- L'espacement entre la surface et l'objet 3D (Distance)
-- La position de la surface sur un des axes de l'objet 3D (Position)
-- L'inclinaison de la surface sur l'axe ou elle se trouve (Tilt)
-=======
-- *Reflective Surface :* intensité de la réflexion
-- *Color :* couleur de la surface réfléchissante
-- *Distance :* espacement entre la surface et l'objet 3D
-- *Position :* position de la surface selon un axe de l'objet
-- *Tilt :* inclinaison de la surface sur l'axe concerné
->>>>>>> d9e913ba0e166a277c7e6eab0bd3f943e6f5c523
+- *Reflective Surface :* Intensité de la réflexion
+- *Color :* Couleur de la surface réfléchissante
+- *Distance :* Espacement entre la surface et l'objet 3D
+- *Position :* Position de la surface selon un axe de l'objet
+- *Tilt :* Inclinaison de la surface sur l'axe concerné
 
 #v(25pt, weak: true)
 * Mettre une image du sol virtuel*
 
 
-<<<<<<< HEAD
 
 
 
@@ -216,7 +216,6 @@ Cet histogramme permet de modifier l'affichage des voxels. Le nombre de voxels p
 #figure(
   image("../Image/0127.png", width:100%),
   caption: [Rendu 3D])
-<<<<<<< HEAD
 
 #v(25pt, weak: true)
 
@@ -247,7 +246,6 @@ Il existe deux stratégies principales de color mapping:
 // Image
 #figure(
   image("../Image/0129.png", width:40%),
-<<<<<<< HEAD
   caption: [Rendu 3D])
 
 #v(25pt, weak: true)
@@ -279,13 +277,11 @@ Exemples de modifications d'affichage en déplaçant les barres jaunes :
 
 === Modification de l'opacité
 #v(25pt, weak: true)
-<<<<<<< HEAD
 L'opacity mapping ou cartographie d'opacité en français, est une technique utilisé en visualisation volumique permettant de contrôler la transparence ou l'opacité des différentes intensités dans un volume 3D. 
 =======
 L'*opacity mapping* contrôle la transparence d'un jeu de données en 2D et en 3D. 
 
 *mettre ou se trouve opacity mapping*
->>>>>>> d9e913ba0e166a277c7e6eab0bd3f943e6f5c523
 
 Dans Dragonfly, nous pouvons modifier l'opacité et la transparence avec le menu "Opcaity Mapping" suivant: 
 #v(25pt, weak: true)
@@ -296,7 +292,6 @@ Dans Dragonfly, nous pouvons modifier l'opacité et la transparence avec le menu
   caption: [Rendu 3D])
 #v(25pt, weak: true)
 
-<<<<<<< HEAD
 Il est possible de choisir le type d'aire sous la courbe, influençant ainsi l'affichage des voxels du rendu 3D.
 // Insert space
 =======
@@ -368,7 +363,6 @@ Il existe siw modes d'opacity mapping en 3D:
 
 Il est possible de modifier la forme de la courbe ou le type de zone (aire) sous la courbe afin d'obtenir des effets de transparence spécifiques dans le rendu 3D.
 
->>>>>>> d9e913ba0e166a277c7e6eab0bd3f943e6f5c523
 #v(25pt, weak: true)
 #v(25pt, weak: true)
 // Image
